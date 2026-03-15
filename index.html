@@ -596,8 +596,16 @@ section.mid  { background: linear-gradient(180deg,#1A0000,#200000); }
   .hero-title { font-size: 2.2rem; }
   .features-grid { grid-template-columns: 1fr; }
 }
+</style>
+</head>
+<body>
 
-/* ... */
+<!-- ══════════════════════════════════════════════════════════════════
+     DRAGON TRANSITION OVERLAY
+══════════════════════════════════════════════════════════════════ -->
+<div id="dragon-overlay">
+  <!-- Two depth panels -->
+  <div class="d-panel" id="d-panel-1"></div>
   <div class="d-panel d-panel-2" id="d-panel-2"></div>
 
   <!-- Crane silhouettes -->
@@ -922,37 +930,37 @@ section.mid  { background: linear-gradient(180deg,#1A0000,#200000); }
       </div>
       <!-- Workshop cards grid -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:3.5rem;" id="workshop-grid">
-        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)';this.style.transform='translateY(0)'">
+        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)'; this.style.transform='translateY(0)'">
           <div style="font-size:1.8rem;margin-bottom:1rem;">🍣</div>
           <p style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">Sushi Roll Workshop</p>
           <p style="font-family:'EB Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;">Learn the art of maki and temaki from our Japanese kitchen. Rice, nori, fillings — you roll it yourself.</p>
           <p style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0.6;">2 hrs · ₹899 per person</p>
         </div>
-        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)';this.style.transform='translateY(0)'">
+        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)'; this.style.transform='translateY(0)'">
           <div style="font-size:1.8rem;margin-bottom:1rem;">🍵</div>
           <p style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">Tea Ceremony Masterclass</p>
           <p style="font-family:'EB Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;">The philosophy behind each pour. Chinese, Korean, and Japanese tea ceremony — guided, unhurried, and immersive.</p>
           <p style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0.6;">90 min · ₹699 per person</p>
         </div>
-        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)';this.style.transform='translateY(0)'">
+        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)'; this.style.transform='translateY(0)'">
           <div style="font-size:1.8rem;margin-bottom:1rem;">🏮</div>
           <p style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">Dumpling Folding Class</p>
           <p style="font-family:'EB Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;">Har gow, gyoza, mandu — fold, steam, and eat what you make. Chef leads each fold technique with your hands.</p>
           <p style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0.6;">2.5 hrs · ₹999 per person</p>
         </div>
-        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)';this.style.transform='translateY(0)'">
+        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)'; this.style.transform='translateY(0)'">
           <div style="font-size:1.8rem;margin-bottom:1rem;">☕</div>
           <p style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">Latte Art Session</p>
           <p style="font-family:'EB Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;">Our barista teaches the pour. Rosettas, tulips, hearts — on espresso, matcha, or hojicha. You leave with the skill.</p>
           <p style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0.6;">75 min · ₹599 per person</p>
         </div>
-        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)';this.style.transform='translateY(0)'">
+        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)'; this.style.transform='translateY(0)'">
           <div style="font-size:1.8rem;margin-bottom:1rem;">🍜</div>
           <p style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">Pho Broth Masterclass</p>
           <p style="font-family:'EB Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;">The bones, the spices, the timing. Learn how our 12-hour pho is built from scratch and take the spice blend home.</p>
           <p style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);opacity:0.6;">3 hrs · ₹1,199 per person</p>
         </div>
-        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)';this.style.transform='translateY(0)'">
+        <div style="border:1px solid rgba(201,168,76,0.15);background:rgba(80,0,0,0.3);padding:2rem;transition:border-color 0.3s,transform 0.3s;" onmouseenter="this.style.borderColor='rgba(201,168,76,0.45)'; this.style.transform='translateY(-3px)'" onmouseleave="this.style.borderColor='rgba(201,168,76,0.15)'; this.style.transform='translateY(0)'">
           <div style="font-size:1.8rem;margin-bottom:1rem;">🎨</div>
           <p style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">Cultural Craft &amp; Cook</p>
           <p style="font-family:'EB Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--text-muted);line-height:1.6;margin-bottom:1rem;">Rotating monthly workshop — one country, one craft, one dish. From Korean bojagi wrapping to Vietnamese spring roll art.</p>
